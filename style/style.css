@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    width: 100%;
+    min-height: 30vh;
+    background: linear-gradient(145deg, rgba(176, 216, 255, 255), rgba(184, 183, 255, 255), rgba(186, 174, 255, 255), rgba(174, 255, 182, 255))
+}
+
+header h1 {
+    font-size: 64px;
+    padding: 4rem 2rem;
+}
+
+.header-title{
+    width: 100%;
+    color: rgba(255, 255, 255, 0.356);
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.bg-pastelgreen {
+    background-color: rgba(174, 255, 182, 255);
+    border-style: none;
+}
+
+.filter-bar{
+    box-shadow: 1px 10px 260px rgba(0, 0, 0, 0.664);
+}
+
+.filter-bar:hover{
+    box-shadow: 0px 10px 130px rgba(0, 0, 0, 0.664);
+}
+
+.container-main {
+    min-height: 53vh;
+}
+
+.card:hover{
+    box-shadow: 0 8px 50px #23232333;
+}
+.card-body{
+    border-radius: 6mm 6mm 0mm 0mm;
+    opacity: 1;
+}
+
+.card:hover .card-body {
+    transform: translateY(-10%);
+}
+
+.ver-mas{
+    background-color: rgba(186, 174, 255, 255);
+    border: 1px solid rgba(176, 216, 255, 255) ;
+    color: rgb(43, 41, 41);
+}
+
+.ver-mas:hover{
+    background-color: rgba(186, 174, 255, 255) !important;
+    color: black;
+    font-weight: 800;
+}
+
+.image-size{
+    height: 190px;
+    object-fit: cover;
+}
+
+.contact-submit{
+    background-color:rgba(174, 255, 182, 255);
+    padding: 2mm 6mm;
+    border-radius: 4mm;
+    border: 0;
+}
+
+.contact-submit:hover{
+    background-color: rgba(184, 183, 255, 255);
+    color: white;
+    box-shadow: 1px 1px 10px grey;
+}
+
+table tr, td, th{
+    border:1px solid rgba(174, 255, 182, 255);
+    background-color: rgba(184, 183, 255, 0.514);
+}
+
+th{
+    height: 2.5rem;
+    background-color: rgba(184, 183, 255, 255);
+}
+
+.stats{   
+    display: flex;
+    justify-content: center; 
+}
+
+.espacio:hover{
+    width: 100% !important;
+}
+
+footer {
+    height: 10vh;
+}
+
+@media screen and (max-width:1024px){
+    .filter-bar{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .searching{
+        justify-content: center !important;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .logo{
+        width: 160px !important;
+    }
+    .filter-bar{
+        border-radius: 2% !important;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .card-details{
+        margin: 1% !important;
+    }
+}
